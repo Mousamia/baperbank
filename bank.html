@@ -14,20 +14,38 @@
         <h1 class="text-5xl text-center mt-6 ">Give him <span class="text-violet-600 font-semibold">Some Money</span>
         </h1>
     </header>
-    <div class="grid grid-cols-3 w-9/12 my-5 mx-auto">
-        <div class="py-12 text-center text-5xl text-white font-medium bg-amber-400 rounded-md mx-3">
-            <h4>Deposit</h4>
-            <h2 class="text-3xl mt-2">$000</h2>
+    <main class=" w-9/12 mx-auto">
+        <!-- 1st part -->
+        <div class="grid grid-cols-3 my-5 mx-auto">
+            <div class="py-12 text-center text-5xl text-white font-medium bg-amber-400 rounded-md mx-3">
+                <h4>Deposit</h4>
+                <h2 class="text-3xl mt-2">$000</h2>
+            </div>
+            <div class="py-12 text-center text-5xl text-white font-medium bg-green-400 rounded-md mx-3">
+                <h4>Withdraw</h4>
+                <h2 class="text-3xl mt-2">$000</h2>
+            </div>
+            <div class="py-12 text-center text-5xl text-white font-medium bg-violet-400 rounded-md mx-3">
+                <h4>Balance</h4>
+                <h2 class="text-3xl mt-2">$1000</h2>
+            </div>
         </div>
-        <div class="py-12 text-center text-5xl text-white font-medium bg-green-400 rounded-md mx-3">
-            <h4>Withdraw</h4>
-            <h2 class="text-3xl mt-2">$000</h2>
+
+        <!-- 2nd part -->
+
+        <div class="grid grid-cols-2 ">
+            <div class="bg-red-300 mx-2 p-8 rounded-lg text-3xl">
+                <h2 class="font-semibold text-white">Please Deposit</h2>
+                <input type="number" class="block my-2" placeholder="enter amount">
+                <button class="bg-amber-400 p-4 my-2 font-semibold text-white" >Deposit</button>
+            </div>
+            <div class="bg-cyan-300 mx-2 p-8 rounded-lg text-3xl">
+                <h2 class="font-semibold text-white">Please Withdraw</h2>
+                <input type="number" class="block my-2" placeholder="enter amount">
+                <button class="bg-green-400 p-4 my-2 font-semibold text-white">Withdraw</button>
+            </div>
         </div>
-        <div class="py-12 text-center text-5xl text-white font-medium bg-violet-400 rounded-md mx-3">
-            <h4>Balance</h4>
-            <h2 class="text-3xl mt-2">$1000</h2>
-        </div>
-    </div>
+    </main>
 </body>
 
 </html>
