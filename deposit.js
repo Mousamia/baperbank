@@ -15,4 +15,21 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
 })
 
 
-// 
+// withdraw option
+document.getElementById('withdraw-button').addEventListener('click', function(){
+    let withdrawAmount = document.getElementById('withdraw-amount').value;
+    console.log(withdrawAmount);
+
+    let withdrawAreaField = document.getElementById('withdraw-area');
+    const withdrawArea = parseFloat(withdrawAreaField.innerText);
+    withdrawAreaField.innerText = withdrawAmount;
+
+    const balanceArea = document.getElementById('balance-area');
+    console.log(balanceArea);
+    const previousBalance = parseFloat(balanceArea.innerText);
+    console.log(previousBalance);
+    balanceArea.innerText = previousBalance - parseFloat(withdrawAmount);
+
+    balanceArea.innerText = '';
+
+})

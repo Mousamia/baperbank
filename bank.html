@@ -23,7 +23,7 @@
             </div>
             <div class="py-12 text-center text-5xl text-white font-medium bg-green-400 rounded-md mx-3">
                 <h4>Withdraw</h4>
-                <h2 class="text-3xl mt-2">$000</h2>
+                <h2 class="text-3xl mt-2">$<span id="withdraw-area">000</span></h2>
             </div>
             <div class="py-12 text-center text-5xl text-white font-medium bg-violet-400 rounded-md mx-3">
                 <h4>Balance</h4>
@@ -41,8 +41,8 @@
             </div>
             <div class="bg-cyan-300 mx-2 p-8 rounded-lg text-3xl">
                 <h2 class="font-semibold text-white" id="deposit-field">Please Withdraw</h2>
-                <input type="number" class="block my-2" placeholder="enter amount">
-                <button class="bg-green-400 p-4 my-2 font-semibold text-white">Withdraw</button>
+                <input type="number" class="block my-2" placeholder="enter amount" id="withdraw-amount">
+                <button class="bg-green-400 p-4 my-2 font-semibold text-white" id="withdraw-button">Withdraw</button>
             </div>
         </div>
     </main>
