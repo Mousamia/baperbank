@@ -7,8 +7,8 @@ document.getElementById('btn-submit').addEventListener('click', function () {
     const password = passwordField.value;
     console.log(password);
 
-    // if(email == 'samiamou' && password == 'joglu'){
-    //     window.location.href = 'bank.html'
-    // }
-    // else alert("wrong passwrod or email")
+    if(email == 'user' && password == 'password'){
+        window.location.href = 'bank.html'
+    }
+    else alert("put {  email = user} and {password = password} to log in")
 })
